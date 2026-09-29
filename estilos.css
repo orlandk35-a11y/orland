@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, serif;
+    background-color: #f4f4f4;
+}
+
+header{
+    height: 70px;
+    line-height: 70px;
+    padding-left: 40px;
+    background: #ff7f27; /* Estilo naranja similar al ejemplo CUBIX */
+    color: #FFFFFF;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* AQUÍ ESTÁ LA CLAVE DE FLEXBOX */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+/* Estilo para cada tarjeta de producto */
+.card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border: solid 2px #ddd;
+    margin-bottom: 10px;
+    background: #e0e0e0; /* Fondo gris claro como en tu referencia */
+}
+
+/* Textos y precios de los productos */
+.title {
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 0.8rem;
+    color: #e65100;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cart {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
